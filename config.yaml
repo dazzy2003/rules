@@ -503,6 +503,18 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🚀 手动切换
       - DIRECT
+  - name: 🌍 港澳台
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 📺 省流节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+  - name: 🌍 konachan..
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
   - name: 🤖 人工智能
     type: select
     proxies:
@@ -805,6 +817,8 @@ proxy-groups:
       - 新加坡2
       - 新加坡3
 rules:
+  - DOMAIN-SUFFIX,gamer.com.tw,🌍 港澳台
+  - DOMAIN-SUFFIX,konachan.com,🌍 konachan..
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
